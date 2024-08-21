@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "76ab835d-f69d-4bd0-b247-aa4ddeefb2a4",
+		"name": "RecipeFinder",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37736747"
+	},
+	"item": [
+		{
+			"name": "view_wishlist",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://test-git-main-joelsajiputhenpurakkals-projects.vercel.app/api/recipes/wishlist",
+					"protocol": "https",
+					"host": [
+						"test-git-main-joelsajiputhenpurakkals-projects",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addto_wishlist",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n    {\n       \n        \"label\": \"Hen Liver Pâté\",\n        \"uri\": \"http://www.edamam.com/ontologies/edamam.owl#recipe_b88f4f35e26d4f8dbfeb9fb9e7203ab4\",\n        \"image\": \"https://edamam-product-images.s3.amazonaws.com/web-img/dc2/dc2e2a434f3ffc65e43cbc859735cb4b.jpg?X-Amz-Security-Token=IQoJb3JpZ2luX2VjED8aCXVzLWVhc3QtMSJIMEYCIQDkDWoHGyjIS9CSXu1l5%2BQ6fhi3Au2xYBDuwzV0hJ06kwIhAPIWnaAEYeX8enRjO%2BwBIjKToy5cIhhhu8CkGolfCOJjKrkFCEgQABoMMTg3MDE3MTUwOTg2Igz%2FPPOFo5ZtAwFWVLEqlgWuQAl6yP2GgnX21cZo1%2FneF66qtdxi3LNUkxVkUzx3qdFcKF2qetfrHROX%2BQL%2FjjK6oFCVEaJsJu3NcIVLnxFwrvPxZI3SSIBBsQNxQAXMV68SEJ7yZIV0CSVJ3lA6Zdo17OHRDpeUhcnrMcjVG6TSyLdpPqFyaVtK%2FIJol%2BDdhEocVBj%2FCIKN9Ren2Emf49BP4A7VurVP%2FEJ6SIuGWh5%2BKep5WEVUTj0p9%2B32cy5VmKXnKFt4axXLgR%2BZpurouM8A2%2Fs%2Bh%2BIu0w4Qs34byBvCOsD3fI%2BHx%2BJ%2BR%2FPqBg0EbYH4sfJhcFm%2F3FlCjF27dYllI7OYgJjTJF%2F5kxI5p7eU99YasO73Vk0dae%2FVJakv4wMFple8h%2BT6Wy5WpUgQB0y8sDOAp%2F1k7FDCqGvvumTnJkahLEVfmGm13zy%2BCY8c41cAKTjAajbDEWY8NGHqZlQb1HQmsF881hly64IUPTx4nH2eRDlauK4i3XM9OFphSTYpSy96ru5PkT%2F2CSoyJ7wpzaEmqizwOXvZ9zSgcC58UdfvI1QgzoK9Oey%2Broc381xf9GMBkYEVmphgmqO%2BHHfIJ6hWQ%2Bzfh%2BlBtdUDiCPWvtFOYpoQoEymLO4phI0Cpg9HupVcFFlzGSJzCXxzAEvfdZQGC17XeaghHlGTsfNJOpOiT4Y%2Fd4JeSJgtNEPVy3MKlf65YtBolkqqyhPDmxncw8T60ZgLOg50lZWlkJrIPgm2GlifXkQz3UbEndE8rIqjKX39Wz6ZaR2UNXQMIjFT6DI1eDaPpKUhIUYhKhm3d8HtqyW5GnJPn1AtPR3vRfI8IUAlf%2FH5Fc8QcfC20DL3NVpjE13TPe%2FwQsdvWWvG8EWbe1EsQIIchXkojgnBPEK5z%2FHxYzDEto22BjqwAbo4UG2CwYtmSOGWZBH4F2VAYLtoywEUJ94UaBVi2VBBJ%2BFvZ3nyQf3h5vWVlASuFfa43R9DFPxvOLKDYW3L7sB9YXXjvv6coKkt8xT7GD7n20YR1EmUADsQHxHW1M6emCvjrYoWBmMOrD0Iws9JjB33Z4mGCt7InCZfhyEccaf1ZAOxAG2HsZgl3%2FNTSO7dndoprCh3eEQZ1FVRgSFfB8dhEaYXLt%2FCTb4mBNcbdR18&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20240819T153128Z&X-Amz-SignedHeaders=host&X-Amz-Expires=3600&X-Amz-Credential=ASIASXCYXIIFJUBLEUKB%2F20240819%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Signature=4af3fb7376bb1dc5636c0450d393ee1e801b8b6ba399859f6ae6ce548a8f1eed\",\n        \"source\": \"Food52\",\n        \"url\": \"https://food52.com/recipes/38835-hen-liver-pate\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-git-main-joelsajiputhenpurakkals-projects.vercel.app/api/recipes/wishlist",
+					"protocol": "https",
+					"host": [
+						"test-git-main-joelsajiputhenpurakkals-projects",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"wishlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete_wishlist_item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://test-git-main-joelsajiputhenpurakkals-projects.vercel.app/api/recipes/wishlist/66c36b0c25bf4fdd68a6e1a5",
+					"protocol": "https",
+					"host": [
+						"test-git-main-joelsajiputhenpurakkals-projects",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"recipes",
+						"wishlist",
+						"66c36b0c25bf4fdd68a6e1a5"
+					]
+				},
+				"description": "at the end the id of the object is added"
+			},
+			"response": []
+		}
+	]
+}
