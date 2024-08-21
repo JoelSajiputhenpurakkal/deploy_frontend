@@ -1,13 +1,16 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const SearchBar = ({ onSearch }) => {
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
+  const navigate = useNavigate(); // Use useNavigate hook for navigation
 
   const handleSearch = (e) => {
     e.preventDefault();
     if (query.trim()) {
-      onSearch(query);
-      setQuery("");
+      onSearch(query); // Call the onSearch function passed as a prop
+      setQuery('');
+      navigate('/deploy_frontend'); // Navigate to /deploy_frontend after search
     }
   };
 
@@ -25,4 +28,3 @@ const SearchBar = ({ onSearch }) => {
 };
 
 export default SearchBar;
-
