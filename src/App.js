@@ -27,11 +27,11 @@ const App = () => {
       <div className="App">
         <h1>Recipe Finder</h1>
         <SearchBar onSearch={fetchRecipes} />
-        <Link to="/wishlist" className="wishlist-button">Wishlist</Link> {/* Wishlist button */}
+        <Link to="/deploy_frontend/wishlist" className="wishlist-button">Wishlist</Link> {/* Wishlist button */}
         <Routes>
-          <Route path="/" element={loading ? <p className="loading">Loading...</p> : <RecipeList recipes={recipes} />} />
-          <Route path="/recipe-summary" element={<RecipeSummary />} />
-          <Route path="/wishlist" element={<Wishlist />} />  {/* Wishlist route */}
+          <Route path="/deploy_frontend/" element={loading ? <p className="loading">Loading...</p> : <RecipeList recipes={recipes} />} />
+          <Route path="/deploy_frontend/recipe-summary" element={<RecipeSummary />} />
+          <Route path="/deploy_frontend/wishlist" element={<Wishlist />} />  {/* Wishlist route */}
         </Routes>
       </div>
     </Router>
