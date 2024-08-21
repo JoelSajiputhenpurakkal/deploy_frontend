@@ -5,7 +5,7 @@ const RecipeList = ({ recipes }) => {
   const navigate = useNavigate();
 
   const handleViewRecipe = (recipe) => {
-    navigate("/recipe-summary", { state: { recipe: recipe.recipe } });
+    navigate("/deploy_frontend/recipe-summary", { state: { recipe: recipe.recipe } });
   };
 
   const handleLikeRecipe = async (recipe) => {
@@ -17,15 +17,11 @@ const RecipeList = ({ recipes }) => {
       url: recipe.recipe.url,
     };
 
-    // Log the data that will be sent to the backend
-    console.log("Data being sent to backend:", recipeData);
-
     try {
       const response = await fetch("https://test-git-main-joelsajiputhenpurakkals-projects.vercel.app/api/recipes/wishlist", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // Include any additional headers if needed, such as authentication tokens
         },
         body: JSON.stringify(recipeData),
       });
